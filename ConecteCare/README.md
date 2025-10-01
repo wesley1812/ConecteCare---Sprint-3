@@ -1,73 +1,78 @@
-# React + TypeScript + Vite
+-> Integrantes
+- João Pedro Scarpin de Assis Carvalho  RM: 565421
+- Gabriel Otavio Wince Souza            RM: 566150
+- Wesley Silva de Andrade               RM: 563593
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+-> Tecnologias usadas no projeto
+- Vite
+- React
+- Typescript
+- Tailwind CSS
+- React Router DOM
 
-Currently, two official plugins are available:
+-> Imagens, Icones e Video
+- joao.jpg
+- gabriel.jpg
+- wesley.jpg 
+- logo.jpg 
+- logo.ico
+- guia.mp4 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+-> Estrutura de pasta
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+CONECTECARE---SPRINT-3/
+└── ConecteCare/                   
+    ├── node_modules/        
+    ├── public/             
+    │   └── assets/
+    │   └── midia/
+    │       └── gabriel.jpg
+    │       └── guia.mp4
+    │       └── joao.jpg
+    │       └── logo.jpg
+    │       └── wesley.jpg
+    │
+    ├── src/                  
+    │   ├── components/        
+    │   │       └── CardConsulta.jsx
+    │   │       └── CardContato.jsx
+    │   │       └── CardEquipe.jsx
+    │   │       └── CardIndicadorSaude.jsx
+    │   │       └── Depoimentos.jsx
+    │   │       └── FaqItem.jsx
+    │   │       └── FormularioCadastro.jsx
+    │   │       └── Layout.jsx
+    │   │       └── Termo.jsx
+    │   │       └── VantagensConecte.jsx
+    │   │
+    │   ├── pages/             
+    │   │   ├── CadastroCuidador.jsx       
+    │   │   ├── Contato.jsx       
+    │   │   ├── FAQ.jsx       
+    │   │   ├── GuiaUsuario.jsx       
+    │   │   ├── Home.jsx       
+    │   │   ├── MenuCuidador.jsx       
+    │   │   ├── NotFound.jsx       
+    │   │   ├── QuemSomos.jsx
+    │   │   └── Teleconsulta.jsx   
+    │   │
+    │   ├── types/            
+    │   │   ├── interfaces.ts
+    │   │   └── useForm.ts
+    │   │
+    │   ├── App.css   
+    │   ├── App.tsx           
+    │   ├── index.css           
+    │   ├── main.tsx         
+    │   └──vite-env.d.ts          
+    │
+    ├── .gitignore    
+    ├── eslint.config.js
+    ├── index.html
+    ├── package-lock.json      
+    ├── package.json           
+    ├── README.md 
+    ├── tsconfig.app.json
+    ├── tsconfig.json
+    ├── tsconfig.node.json    
+    └── vite.config.ts
